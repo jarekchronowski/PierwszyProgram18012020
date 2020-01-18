@@ -1,8 +1,6 @@
 package pl.sda.programowanie;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Date;
 import java.util.Scanner;
 
 public class KontrolaDostepu {
