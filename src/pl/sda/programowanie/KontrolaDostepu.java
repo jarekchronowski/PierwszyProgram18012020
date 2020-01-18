@@ -1,13 +1,19 @@
 package pl.sda.programowanie;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.Scanner;
 
 public class KontrolaDostepu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj rok urodzenia");
-        int biezacyrok = 2020;
-        int biezacymiesiac = 1;
+
+
+        int biezacyrok = LocalDate.now().getDayOfYear();
+        int biezacymiesiac = LocalDate.now().getMonthValue();
+
         int rokurodzenia = scanner.nextInt();
 
         if (biezacyrok - rokurodzenia > 18) {
